@@ -4,11 +4,26 @@
   <head>
     <title>Gathering Input</title>
     <meta charset="utf-8" />
-<link rel="stylesheet" type="text/css" href="">
+<script>
+function getName() {
+var fullName=document.getElementById("First").value + " " + document.getElementById("Last").value;
+  document.getElementById("message").innerHTML = fullName;
+}
 
+
+</script>
   </head>
 <body>
 
   First name: <input type="text" id="First"><br>
   Last name: <input type="text" id="Last"><br>
-  <button type="button" value="doneButton">
+  <button type="button" value="doneButton" onclick="getName();">
+    Done
+  </button>
+  <p id="message">
+  </p>
+
+
+</body>
+
+</html>
